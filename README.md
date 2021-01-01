@@ -1,5 +1,6 @@
 # Vanilla Js
- Basic Projects for better understanding(without any framework)
+ Basic Projects for better understanding(without any framework)<br>
+ 1.<a href="https://github.com/iamketan56/Vanilla-Js/tree/main/Form%20Validator">Form Validator</a>
  <br>
 ![](https://github.com/iamketan56/Vanilla-Js/blob/main/Form%20Validator/r1.PNG)
 ![]( https://github.com/iamketan56/Vanilla-Js/blob/main/Form%20Validator/r2.PNG)
