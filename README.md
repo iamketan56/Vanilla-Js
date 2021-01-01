@@ -1,5 +1,6 @@
 # Vanilla Js
  Basic Projects for better understanding(without any framework)
+ <br>
 ![](https://github.com/iamketan56/Vanilla-Js/blob/main/Form%20Validator/r1.PNG)
 ![]( https://github.com/iamketan56/Vanilla-Js/blob/main/Form%20Validator/r2.PNG)
 ![]( https://github.com/iamketan56/Vanilla-Js/blob/main/Form%20Validator/r3.PNG)
