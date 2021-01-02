@@ -11,4 +11,4 @@
 <br>
 2.<a href = "https://iamketan56.github.io/Vanilla-Js/Book%20Your%20Ticket/index.html">Book Your Seat</a>
 <h3>Simple JS practice by the use of local storage.</h3><br>
-![](https://github.com/iamketan56/Vanilla-Js/blob/main/Book%20Your%20Ticket/BT1.PNG)
+![]( https://github.com/iamketan56/Vanilla-Js/blob/main/Book%20Your%20Ticket/BT1.PNG)
