@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161629;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato" sans-serif;
+  margin: 0;
+  font-size: 40px;
+}
+.movie-container {
+  margin: 20px 0;
+}
+
+.container {
+  perspective: 3000px;
+  margin-bottom: 20px;
+}
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+.stair {
+  background-color: #242333;
+  height: 20px;
+  width: 20px;
+}
+
+.seat {
+  background-color: #474749;
+  height: 30px;
+  width: 30px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+.row {
+  display: flex;
+}
+
+.seat:nth-of-type(5) {
+  margin-right: 20px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.showcase {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 10px;
+}
+
+.screen {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 2555, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0;
+}
+p.text span {
+  color: #6feaf6;
+}
