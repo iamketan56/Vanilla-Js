@@ -7,6 +7,7 @@ const selectmovie = document.getElementById('movie');
 let ticketprice = +selectmovie.value;
 
 showdata();
+
 function saveselectedmoviedata(mindex,mprice)
 {
     localStorage.setItem('SelectedMovie', mindex);
@@ -16,8 +17,6 @@ function saveselectedmoviedata(mindex,mprice)
 function updatecount()
     {
     const selectedseats = document.querySelectorAll('.row .seat.selected');
-
-    
 
     const seatindex = [...selectedseats].map(seat => [...seats].indexOf(seat));
     
@@ -44,12 +43,12 @@ function showdata()
         });
          
     }
-
     const selectedmovieindex = localStorage.getItem('SelectedMovie');
     if(selectedmovieindex !== null)
     {
         selectmovie.selectedIndex = selectedmovieindex;
-}}
+    }
+}
     
 selectmovie.addEventListener('change', e => {
     ticketprice = +e.target.value;
