@@ -7,6 +7,6 @@
 <h4>Simple JS practice by the use of local storage.</h4>
 3.<a href = "https://iamketan56.github.io/Vanilla-Js/Find%20Your%20Meal/index.html">Find Your Meal</a><br><br>
 <b>This project uses the TheMealDB's API for fetching the data.(French Meals Only)</b><br><br>
-<i>Link for TheMealDB API : https://www.themealdb.com/api.php </i>
+<i>Link for the TheMealDB website: https://www.themealdb.com/ and  TheMealDB API : https://www.themealdb.com/api.php </i>
 
 
