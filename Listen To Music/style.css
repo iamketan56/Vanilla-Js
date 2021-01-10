@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    0deg,
+    rgba(247, 247, 247, 1) 23.8%,
+    rgba(252, 221, 221, 1) 92%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  margin: 0;
+}
+
+.music-container {
+  background-color: rgb(24, 18, 18);
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgb(75, 74, 74);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+#title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+.img-container::after {
+  content: " ";
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, 50%);
+}
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 8s linear infinite;
+  animation-play-state: paused;
+}
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: rgb(151, 151, 146);
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: #e9d8ee;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+  background-color: lavenderblush;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  opacity: 0;
+  width: calc(100% - 40px);
+  padding: 10px 10px 10px 150px;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+.music-info h4 {
+  margin: 0;
+}
+
+.prograss-container {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  height: 4px;
+  width: 100%;
+}
+
+.prograss {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
