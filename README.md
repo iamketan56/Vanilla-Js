@@ -14,5 +14,6 @@
 4.<a href = "https://iamketan56.github.io/Vanilla-Js/Listen%20To%20Music/index.html">Listen to Music</a><br><br>
 <b>Basic music player with some songs (all functionality)</b>
 <br><br>
-4.<a href = "">Scroll donw to infinity</a><br><br>
+5.<a href = "">Scroll donw to infinity</a><br><br>
+<b>Use of API to fetch infinity posts </b>
 
