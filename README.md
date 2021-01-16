@@ -14,7 +14,8 @@
 4.<a href = "https://iamketan56.github.io/Vanilla-Js/Listen%20To%20Music/index.html">Listen to Music</a><br><br>
 <b>Basic music player with some songs (all functionality)</b>
 <br><br>
-5.<a href = "">Scroll down to infinity</a><br><br>
+5.<a href = "https://iamketan56.github.io/Vanilla-Js/Scroll%20Down%20To%20Infinity/index.html">Scroll down to infinity</a><br><br>
 <b>Use of API to fetch infinity posts (Might not work on github.io) </b><br><br>
-6.<a href = ""><br><br>
+6.<a href = "https://iamketan56.github.io/Vanilla-Js/Text%20To%20Speech%20Convertor/index.html"><br><br>
+ <b>Use of Web API <br> Tthis project can read the text and speak in different languages </b>
 
