@@ -18,4 +18,7 @@
 <b>Use of API to fetch infinity posts (Might not work on github.io) </b><br><br>
 6.<a href = "https://iamketan56.github.io/Vanilla-Js/Text%20To%20Speech%20Convertor/index.html">Text To Speech Convertor</a><br><br>
  <b>Use of Web API <br> Tthis project can read the text and speak in different languages </b>
+ 
+7.<a href = "">Web Camera Access using JS</a><br><br>
+<b>Use of simple JS code</b><br><br>
 
