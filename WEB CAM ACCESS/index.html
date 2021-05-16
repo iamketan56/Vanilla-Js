@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB CAM</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="webcam">
+        <div class="video">
+            <video id="video" autoplay></video>
+        </div>
+        <div class="webcam-control">
+            <a href="#!" class="btn-start" onclick="start()">
+                <i class="fas fa-camera"></i></a>
+            <a href="#!" class="btn-stop" onclick="StopWebCam()">
+                <i class="fas fa-stop-circle"></i></a>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var StopWebCam = function () {
+    var stream = video.srcObject;
+    var tracks  = stream.getTracks();
+    for(var i=0;i<tracks.length;i++)
+    {
+        var track  = tracks[i];
+        track.stop();
+    }
+    video.srcObject = null;
+}
+var start = function()
+{
+    var video = document.getElementById("video");
+    vendorURL = window.URL || window.webkitURL;
+    if(navigator.mediaDevices.getUserMedia)
+    {
+        navigator.mediaDevices.getUserMedia({video:true}).then(function(stream){video.srcObject = stream;}).catch(function(error){
+            console.log("Somthing Went Wrong");
+        
+        });
+    }
+}
+$(function(){start();});
+</script>
+</html>
