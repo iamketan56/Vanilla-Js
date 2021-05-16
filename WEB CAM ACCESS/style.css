@@ -1,0 +1,21 @@
+.webcam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.webcam-control {
+  text-decoration: none;
+  color: #000;
+  background: #dfe9e3;
+  padding: 10px 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.webcam-control a:hover {
+  box-shadow: 1px 1px 2px #f9f9f9;
+  color: #000;
+}
+i {
+  font-size: 40px;
+}
