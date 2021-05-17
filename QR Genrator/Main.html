@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+    <title>QR GENERATOR</title>
+</head>
+<body>
+    <div id="border" class="fadeInLeft">
+        <div id="content">
+            <header>
+                <h1>Lets Create QR Code</h1></header>
+
+        <div class="textbox">
+            <textarea name="QR_Input" id="QR_Input" type="text" cols="33" rows="1" value ="1" placeholder="IBS CODE"></textarea>
+
+        </div>
+        <div class="buttons">
+            <button id="submitButton"
+                onclick()="DisplayInformation()">Submit
+            </button>
+            <button id="startOverButton" onclick()="startOver()" style="background-color: grey;">Start Again
+            </button>
+        </div>
+        <div id="outputBorder">
+            <span>
+                <div id="output">
+
+                </div>
+            </span>
+        </div>
+        <span id="savemess"></span>
+    </div>
+    </div>
+</body>
+<script>
+    function DisplayInformation()
+    {
+        let ibscode = document.getElementById("QR_Input");
+        let disp = document.getElementById("output");
+        if(ibscode !== "")
+        {
+            var qrcode = new QRCode("test", {
+    text: "http://jindo.dev.naver.com/collie",
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+        }
+        if(ibscode !== "")
+        {
+        displayMessage();
+        disableBtn();
+        }
+    }
+    function displayMessage()
+    {
+        let dispaly = document.getElementById("output");
+        let message = document.createElement("p");
+        let span= document.getElementById('savemess');
+        message.setAttribute("id","message");
+        message.innerText = "Right Click to save image";
+        span.appendChild(message);
+    }
+</script>
+</html>
