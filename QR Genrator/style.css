@@ -1,0 +1,19 @@
+body
+{
+    text-align: center;
+    letter-spacing: 1.5;
+    font-family: 'Staatliches',cursive;
+    background: #b28d3b;
+    background: linear-gradient(to right,#b28d3b,#ffffff);
+}
+#QR_Input
+{
+    height: 20px;
+    position: relative;
+    border: 2px solid #cdcdcd;
+    border-color: rgba(0,0,0,.14);
+    background-color: aliceblue;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 85%;
+}
